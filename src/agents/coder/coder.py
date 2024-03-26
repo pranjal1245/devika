@@ -30,7 +30,6 @@ class Coder:
 
     def validate_response(self, response: str) -> Union[List[Dict[str, str]], bool]:
         response = response.strip()
-
         response = response.split("~~~", 1)[1]
         response = response[:response.rfind("~~~")]
         response = response.strip()
